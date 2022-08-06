@@ -56,6 +56,7 @@ img {
 b {
   font-weight: inherit;
 }
+
 /* Скрывает элементы с классом visually-hidden */
 
 .visually-hidden {
@@ -97,6 +98,7 @@ b {
 .link {
   text-decoration: none;
 }
+
 /* section title H2 */
 
 .title {
@@ -229,10 +231,8 @@ b {
   margin-right: auto;
 
   background-color: var(--footer-bg-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
     url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -326,6 +326,38 @@ b {
 .specialization {
   /* background-color: teal; */
   padding-top: 0;
+}
+
+.specialization-thumb {
+  position: relative;
+
+
+
+}
+
+
+
+.specialization-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+
 }
 
 .specialization-title {
@@ -601,6 +633,7 @@ b {
   margin-left: -30px;
   /* gap: 30px; */
 }
+
 /* 
 .cards-list-item {
   flex-basis: calc(100% / 3 - 30px);
